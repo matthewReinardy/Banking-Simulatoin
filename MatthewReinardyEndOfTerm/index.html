@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>End of Term Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Checking Account-->
+    <div id="containerOne">
+      <div id="checkingForm">
+        <input
+          type="submit"
+          value="Open Account"
+          class="openAccountButton"
+          id="openChecking"
+        />
+        <input
+          type="number"
+          class="openValueForm"
+          id="checkingDeposit"
+          placeholder="Initial Deposit"
+        />
+        <br />
+        <label
+          >Date: <input type="date" class="openDateForm" id="checkingDate" />
+        </label>
+      </div>
+      <div id="checkingAccount">
+        <h2>Checking Account</h2>
+        <img src="images/Plains.jpeg" alt="Plains" class="defaultImg" />
+        <div id="checkingOpened" class="hide openedAccountForm">
+          <div class="formLabel">
+            Current Interest Rate
+            <input
+              type="number"
+              value="0.01"
+              class="formInput"
+              id="checkingInterestRate"
+            />
+          </div>
+          <div class="depositWithdrawSection">
+            <button class="formButton" id="checkingDepositButton">
+              Deposit
+            </button>
+            <input type="number" class="formInput" id="checkingDepositAmount" />
+          </div>
+          <div class="depositWithdrawSection">
+            <button class="formButton" id="checkingWithdrawButton">
+              Withdraw
+            </button>
+            <input
+              type="number"
+              class="formInput"
+              id="checkingWithdrawAmount"
+            />
+          </div>
+        </div>
+        <table class="accountTable hide" id="checkingTable">
+          <!-- Placeholder for table  -->
+
+          <tr>
+            <th id="dateHeader_checking">Date</th>
+            <th id="descriptionHeader_checking">Description</th>
+            <th id="amountHeader_checking">Amount</th>
+            <th id="balanceHeader_checking">Balance</th>
+          </tr>
+        </table>
+        <h1 id="checkingClosed" class="closedAlert hide">ACCOUNT CLOSED</h1>
+      </div>
+      <input
+        type="submit"
+        value="Close Account"
+        class="closeAccountButton hide"
+        id="closeChecking"
+      />
+    </div>
+
+    <!--Savings Account-->
+    <div id="containerTwo">
+      <div id="savingsForm">
+        <input
+          type="submit"
+          value="Open Account"
+          class="openAccountButton"
+          id="openSaving"
+        />
+        <input
+          type="number"
+          class="openValueForm"
+          id="savingsDeposit"
+          placeholder="Initial Deposit"
+        />
+        <br />
+        <label
+          >Date: <input type="date" class="openDateForm" id="savingsDate" />
+        </label>
+      </div>
+      <div id="savingsAccount">
+        <h2>Savings Account</h2>
+        <img src="images/Forest.jpeg" alt="Forest" class="defaultImg" />
+        <div id="savingsOpened" class="hide openedAccountForm">
+          <div class="formLabel">
+            Current Interest Rate
+            <input
+              type="number"
+              value="0.03"
+              class="formInput"
+              id="savingsInterestRate"
+            />
+          </div>
+          <div class="depositWithdrawSection">
+            <button class="formButton" id="savingsDepositButton">
+              Deposit
+            </button>
+            <input type="number" class="formInput" id="savingsDepositAmount" />
+          </div>
+          <div class="depositWithdrawSection">
+            <button class="formButton" id="savingsWithdrawButton">
+              Withdraw
+            </button>
+            <input type="number" class="formInput" id="savingsWithdrawAmount" />
+          </div>
+        </div>
+
+        <table class="accountTable hide" id="savingsTable">
+          <!-- Placeholder for table  -->
+          <tr>
+            <th id="dateHeader_savings">Date</th>
+            <th id="descriptionHeader_savings">Description</th>
+            <th id="amountHeader_savings">Amount</th>
+            <th id="balanceHeader_savings">Balance</th>
+          </tr>
+        </table>
+        <h1 id="savingsClosed" class="closedAlert hide">ACCOUNT CLOSED</h1>
+      </div>
+      <input
+        type="submit"
+        value="Close Account"
+        class="closeAccountButton hide"
+        id="closeSavings"
+      />
+    </div>
+
+    <!--Mutual Fund Account-->
+    <div id="containerThree">
+      <div id="mutualFundForm">
+        <input
+          type="submit"
+          value="Open Account"
+          class="openAccountButton"
+          id="openMutualFund"
+        />
+        <input
+          type="number"
+          class="openValueForm"
+          id="mutualFundDeposit"
+          placeholder="Initial Deposit"
+        />
+        <br />
+        <label
+          >Date: <input type="date" class="openDateForm" id="mutualFundDate" />
+        </label>
+      </div>
+      <div id="mutualFundAccount">
+        <h2>Mutual Fund Account</h2>
+        <img src="images/Lake.jpeg" alt="Lake" class="defaultImg" />
+        <div id="mutualFundOpened" class="hide openedAccountForm">
+          <div class="formLabel">
+            Current Interest Rate
+            <input
+              type="number"
+              value="0.06"
+              class="formInput"
+              id="mutualFundInterestRate"
+            />
+          </div>
+          <div class="depositWithdrawSection">
+            <button class="formButton" id="mutualDepositButton">Deposit</button>
+            <input type="number" class="formInput" id="mutualDepositAmount" />
+          </div>
+          <div class="depositWithdrawSection">
+            <button class="formButton" id="mutualWithdrawButton">
+              Withdraw
+            </button>
+            <input type="number" class="formInput" id="mutualWithdrawAmount" />
+          </div>
+        </div>
+        <table class="accountTable hide" id="mutualFundTable">
+          <!-- Placeholder for table  -->
+          <tr>
+            <th id="dateHeader_mutual">Date</th>
+            <th id="descriptionHeader_mutual">Description</th>
+            <th id="amountHeader_mutual">Amount</th>
+            <th id="balanceHeader_mutual">Balance</th>
+          </tr>
+        </table>
+        <h1 id="mutualClosed" class="closedAlert hide">ACCOUNT CLOSED</h1>
+      </div>
+      <input
+        type="submit"
+        value="Close Account"
+        class="closeAccountButton hide"
+        id="closeMutual"
+      />
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
